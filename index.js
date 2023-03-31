@@ -1,4 +1,4 @@
-const DateHelper = ({ date, format, divider }) => {
+function DateHelper({ date, format, divider }) {
   const receivedDate = new Date(date);
   let newDateString = "";
   let dividerSent = divider || "/";
@@ -36,6 +36,6 @@ const DateHelper = ({ date, format, divider }) => {
   }
 
   return newDateString;
-};
+}
 
-modules.exports = { DateHelper };
+modules.exports = DateHelper;
