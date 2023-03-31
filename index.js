@@ -1,7 +1,5 @@
 const DateHelper = ({ date, format, divider, yearDigits }) => {
   let receivedDate = new Date(date.replace(/-/g, "/").replace(/T.+/, ""));
-  console.log(receivedDate);
-  console.log(receivedDate);
 
   let newDateString = "";
   let dividerSent = divider || "/";
