@@ -1,10 +1,19 @@
-const DateHelper = ({ date, format, divider }) => {
+const DateHelper = ({ date, format, divider, yearDigits }) => {
   const receivedDate = new Date(date);
   let newDateString = "";
   let dividerSent = divider || "/";
-  const day = receivedDate.getDate();
-  const month = receivedDate.getMonth();
-  const year = receivedDate.getFullYear();
+  let day = receivedDate.getDate();
+  if (receivedDate.getDate() <= 9) {
+    day = `0${receivedDate.getDate()}`;
+  }
+  let month = receivedDate.getMonth();
+  if (receivedDate.getMonth() <= 9) {
+    month = `0${receivedDate.getMonth()}`;
+  }
+  let year = receivedDate.getFullYear();
+  if (yearDigits === "short") {
+    year = receivedDate.getFullYear().toString().substr(-2);
+  }
 
   switch (format) {
     case "DDMMYYYY":

@@ -7,12 +7,12 @@ Formats your date for you!
 Then...
 
 ```
-import {DateHelper} from '@hgalvao/date-helper';
+import DateHelper from '@hgalvao/date-helper';
 
-<DateHelper date={"1995,12,2"} format="DDMMYYYY" divider='-' />
+<DateHelper date={"1995,12,2"} format="DDMMYYYY" divider='-' yearsDigit='short' />
 ```
 
-Will return: 2-12-1995
+Will return: 2-11-95
 
 DateHelper can have multiple formats supported:
 
@@ -31,3 +31,5 @@ Dates need to follow the following formats to be supported:
 - _"1995-12-17"_
 - _1995,11,17_
 - _1995,11,17,3,24,0_
+
+The yearsDigit is set default to 'long' and will return the years with 4 digits. However, it accepts `yearsDigit='short'` to return the years with 2 digits only
