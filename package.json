@@ -11,7 +11,8 @@
     "url": "git+https://github.com/hgalvao98/date-helper.git"
   },
   "keywords": [
-    "date"
+    "date",
+    "react"
   ],
   "author": "Henrique Galvão",
   "license": "ISC",
