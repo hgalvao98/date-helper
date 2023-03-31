@@ -1,13 +1,16 @@
 const DateHelper = ({ date, format, divider, yearDigits }) => {
-  const receivedDate = new Date(date);
+  let receivedDate = new Date(date.replace(/-/g, "/").replace(/T.+/, ""));
+  console.log(receivedDate);
+  console.log(receivedDate);
+
   let newDateString = "";
   let dividerSent = divider || "/";
   let day = receivedDate.getDate();
-  if (receivedDate.getDate() <= 9) {
+  if (day <= 9) {
     day = `0${receivedDate.getDate()}`;
   }
-  let month = receivedDate.getMonth();
-  if (receivedDate.getMonth() <= 9) {
+  let month = receivedDate.getMonth() + 1;
+  if (month <= 9) {
     month = `0${receivedDate.getMonth()}`;
   }
   let year = receivedDate.getFullYear();
