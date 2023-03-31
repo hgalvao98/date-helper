@@ -1,0 +1,22 @@
+{
+  "name": "@hgalvao/date-helper",
+  "version": "1.0.0",
+  "description": "Formats your date for you!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hgalvao98/date-helper.git"
+  },
+  "keywords": [
+    "date"
+  ],
+  "author": "Henrique Galvão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hgalvao98/date-helper/issues"
+  },
+  "homepage": "https://github.com/hgalvao98/date-helper#readme"
+}

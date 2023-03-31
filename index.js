@@ -38,4 +38,4 @@ const DateHelper = ({ date, format, divider }) => {
   return newDateString;
 };
 
-modules.exports.DateHelper = DateHelper;
+modules.exports = { DateHelper };
